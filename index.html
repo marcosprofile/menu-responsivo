@@ -1,117 +1,110 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-	<head>
-		<meta charset="UTF-8">
-		<title> Responsive Sidebar Menu </title>
-		<link rel="stylesheet" href="style.css">
-		<!-- Boxicons CDN Link -->
-		<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	</head>
-	<body>
-		<div class="sidebar">
-			<div class="logo_content">
-				<div class="logo">
-					<i class="bx bx-home"></i>
-					<div class="logo_name">Menu</div>
-				</div>
-				<i class='bx bx-menu' id="btn"></i>
+
+<head>
+	<meta charset="UTF-8">
+	<title> Responsive Sidebar Menu </title>
+	<link rel="stylesheet" href="style.css">
+	<!-- Boxicons CDN Link -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<nav class="sidebar">
+		<div class="logo_content">
+			<div class="logo">
+				<i class="bx bx-home"></i>
+				<div class="logo_name">Menu</div>
 			</div>
-			<ul class="nav_list">
-				<li>
-					<i class="bx bx-search"></i>
-					<input type="text" placeholder="Search...">
-					<span class="tooltip">Search</span>
-				</li>
-				<li>
-					<a href="#">
-						<i class="bx bx-grid-alt"></i>
-						<span class="links_name">Dashboard</span>
-					</a>
-					<span class="tooltip">Dashboard</span>
-				</li>
-				<li>
-					<a href="#">
-						<i class="bx bx-user"></i>
-						<span class="links_name">Usuário</span>
-					</a>
-					<span class="tooltip">Usuário</span>
-				</li>
-				<li>
-					<a href="#">
-						<i class="bx bx-chat"></i>
-						<span class="links_name">Mensagens</span>
-					</a>
-					<span class="tooltip">Mensagens</span>
-				</li>
-				<li>
-					<a href="#">
-						<i class='bx bx-line-chart'></i>
-						<span class="links_name">Estatísticas</span>
-					</a>
-					<span class="tooltip">Estatísticas</span>
-				</li>
-				<li>
-					<a href="#">
-						<i class="bx bx-folder"></i>
-						<span class="links_name">Arquivos</span>
-					</a>
-					<span class="tooltip">Arquivos</span>
-				</li>
-				<li>
-					<a href="#">
-						<i class="bx bx-cart-alt"></i>
-						<span class="links_name">Pedido</span>
-					</a>
-					<span class="tooltip">Pedido</span>
-				</li>
-				<li>
-					<a href="#">
-						<i class="bx bx-heart"></i>
-						<span class="links_name">Salvo</span>
-					</a>
-					<span class="tooltip">Salvo</span>
-				</li>
-				<li>
-					<a href="#">
-						<i class="bx bx-cog"></i>
-						<span class="links_name">Configurações</span>
-					</a>
-					<span class="tooltip">Configurações</span>
-				</li>
-			</ul>
-			<div class="profile_content">
-				<div class="profile">
-					<div class="profile_details">
-						<img src="profile1.jpg" width="100%">
-						<div class="name_job">
-							<div class="name">Marcos Ferreira</div>
-							<div class="job">Web Developer</div>
-						</div>
+			<i class='bx bx-menu' id="btn"></i>
+		</div>
+		<ul class="nav_list">
+			<li>
+				<i class="bx bx-search"></i>
+				<input type="text" placeholder="Search...">
+				<span class="tooltip">Search</span>
+			</li>
+			<li>
+				<a href="#">
+					<i class="bx bx-grid-alt"></i>
+					<span class="links_name">Dashboard</span>
+				</a>
+				<span class="tooltip">Dashboard</span>
+			</li>
+			<li>
+				<a href="#">
+					<i class="bx bx-user"></i>
+					<span class="links_name">Usuário</span>
+				</a>
+				<span class="tooltip">Usuário</span>
+			</li>
+			<li>
+				<a href="#">
+					<i class="bx bx-chat"></i>
+					<span class="links_name">Mensagens</span>
+				</a>
+				<span class="tooltip">Mensagens</span>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bx-line-chart'></i>
+					<span class="links_name">Estatísticas</span>
+				</a>
+				<span class="tooltip">Estatísticas</span>
+			</li>
+			<li>
+				<a href="#">
+					<i class="bx bx-folder"></i>
+					<span class="links_name">Arquivos</span>
+				</a>
+				<span class="tooltip">Arquivos</span>
+			</li>
+			<li>
+				<a href="#">
+					<i class="bx bx-cart-alt"></i>
+					<span class="links_name">Pedido</span>
+				</a>
+				<span class="tooltip">Pedido</span>
+			</li>
+			<li>
+				<a href="#">
+					<i class="bx bx-heart"></i>
+					<span class="links_name">Salvo</span>
+				</a>
+				<span class="tooltip">Salvo</span>
+			</li>
+			<li>
+				<a href="#">
+					<i class="bx bx-cog"></i>
+					<span class="links_name">Configurações</span>
+				</a>
+				<span class="tooltip">Configurações</span>
+			</li>
+		</ul>
+		<div class="profile_content">
+			<div class="profile">
+				<div class="profile_details">
+					<img src="profile.jpg" width="100%" alt="User">
+					<div class="name_job">
+						<div class="name">Marcos Ferreira</div>
+						<div class="job">Web Developer</div>
 					</div>
-					<a href=""><i class='bx bx-log-out' id="log_out"></i></a>
 				</div>
+				<a href="#" title="Logout" id="logout">
+					<i class='bx bx-log-out'></i>
+				</a>
 			</div>
 		</div>
-		<div>
-			<img src="gestao.jpg" width="100%" height="630">
-			<div class="home_content">
-				<div class="text"></div>
-			</div>
+	</nav>
+	<div>
+		<img src="gestao.jpg" width="100%" height="100%" alt="Background">
+		<div class="home_content">
+			<div class="text"></div>
 		</div>
-		<script>
-			let btn = document.querySelector("#btn");
-			let sidebar = document.querySelector(".sidebar");
-			let searchBtn = document.querySelector(".bx-search");
+	</div>
 
-			btn.onclick = function() {
-				sidebar.classList.toggle("active");
-			}
-			searchBtn.onclick = function() {
-				sidebar.classList.toggle("active");
-			}
+	<script src="app.js"></script>
+</body>
 
-		</script>
-
-	</body>
 </html>
